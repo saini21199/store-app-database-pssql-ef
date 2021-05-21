@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+<Node Id="IModel" Label="DepartmentContext" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" PropertyAccessMode="PropertyAccessMode.Default" ProductVersion="3.1.11" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn
+Relational:MaxIdentifierLength: 63" Category="Model" Group="Expanded" />
+<Node Id = "Address" Label="Address" Name="Address" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: address" Category="EntityType" Group="Expanded" />
+<Node Id = "Category" Label="Category" Name="Category" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: category" Category="EntityType" Group="Expanded" />
+<Node Id = "Address.address_id" Label="address_id" Name="address_id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Address.Staff" Label="Staff (*)" Name="Staff" Category="Navigation Collection" Type="ICollection&lt;Staff&gt;"  Field="" Dependent="Staff" Principal="" Inverse="addresses" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Address.addressLine_1" Label="addressLine_1" Name="addressLine_1" Category="Property Required" Type="string" MaxLength="64" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 64
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Address.city" Label="city" Name="city" Category="Property Optional" Type="string" MaxLength="10" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 10
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Address.pincode" Label="pincode" Name="pincode" Category="Property Required" Type="long" MaxLength="10" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 10
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.LongTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Address.state" Label="state" Name="state" Category="Property Required" Type="string" MaxLength="10" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 10
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Product" Label="Product" Name="Product" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: product" Category="EntityType" Group="Expanded" />
+<Node Id = "Category.category_id" Label="category_id" Name="category_id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Category.Product" Label="Product (*)" Name="Product" Category="Navigation Collection" Type="ICollection&lt;Product&gt;"  Field="" Dependent="Product" Principal="" Inverse="categories" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Category.cat_code" Label="cat_code" Name="cat_code" Category="Property Required" Type="string" MaxLength="10" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 10
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Category.cat_name" Label="cat_name" Name="cat_name" Category="Property Required" Type="string" MaxLength="64" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 64
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "PurchaseOrder" Label="PurchaseOrder" Name="PurchaseOrder" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: porder" Category="EntityType" Group="Expanded" />
+<Node Id = "Product.product_id" Label="product_id" Name="product_id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Product.categories" Label="categories (1)" Name="categories" Category="Navigation Property" Type="Category"  Field="" Dependent="" Principal="Category" Inverse="Product" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Product.purchaseorder" Label="purchaseorder (*)" Name="purchaseorder" Category="Navigation Collection" Type="ICollection&lt;PurchaseOrder&gt;"  Field="" Dependent="PurchaseOrder" Principal="" Inverse="products" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Product.category_id" Label="category_id" Name="category_id" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Product.costPrice" Label="costPrice" Name="costPrice" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Product.manufacturer" Label="manufacturer" Name="manufacturer" Category="Property Optional" Type="string" MaxLength="10" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 10
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Product.name" Label="name" Name="name" Category="Property Required" Type="string" MaxLength="64" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 64
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Product.sellingPrice" Label="sellingPrice" Name="sellingPrice" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Product.supplier_id" Label="supplier_id" Name="supplier_id" Category="Property Foreign" Type="Nullable&lt;int&gt;" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="True" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Role" Label="Role" Name="Role" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: role" Category="EntityType" Group="Expanded" />
+<Node Id = "PurchaseOrder.supplier_id" Label="supplier_id" Name="supplier_id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "PurchaseOrder.products" Label="products (1)" Name="products" Category="Navigation Property" Type="Product"  Field="" Dependent="" Principal="Product" Inverse="purchaseorder" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "PurchaseOrder.suppliers" Label="suppliers (1)" Name="suppliers" Category="Navigation Property" Type="Supplier"  Field="" Dependent="" Principal="Supplier" Inverse="PurchaseOrders" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "PurchaseOrder.product_id" Label="product_id" Name="product_id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "PurchaseOrder.order_id" Label="order_id" Name="order_id" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "PurchaseOrder.supply_date" Label="supply_date" Name="supply_date" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimestampTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Staff" Label="Staff" Name="Staff" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: staff" Category="EntityType" Group="Expanded" />
+<Node Id = "Role.role_id" Label="role_id" Name="role_id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Role.Staff" Label="Staff (*)" Name="Staff" Category="Navigation Collection" Type="ICollection&lt;Staff&gt;"  Field="" Dependent="Staff" Principal="" Inverse="roles" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Role.description" Label="description" Name="description" Category="Property Required" Type="string" MaxLength="64" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 64
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Role.name" Label="name" Name="name" Category="Property Required" Type="string" MaxLength="64" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 64
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Supplier" Label="Supplier" Name="Supplier" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: supplier" Category="EntityType" Group="Expanded" />
+<Node Id = "Staff.staff_id" Label="staff_id" Name="staff_id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Staff.addresses" Label="addresses (1)" Name="addresses" Category="Navigation Property" Type="Address"  Field="" Dependent="" Principal="Address" Inverse="Staff" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Staff.roles" Label="roles (1)" Name="roles" Category="Navigation Property" Type="Role"  Field="" Dependent="" Principal="Role" Inverse="Staff" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Staff.Staff_name" Label="Staff_name" Name="Staff_name" Category="Property Optional" Type="string" MaxLength="64" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 64
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Staff.address_id" Label="address_id" Name="address_id" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Staff.phone_no" Label="phone_no" Name="phone_no" Category="Property Required" Type="string" MaxLength="10" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 10
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Staff.role_id" Label="role_id" Name="role_id" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Supplier" Label="Supplier" Name="Supplier" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="" Category="EntityType" Group="Expanded" />
+<Node Id = "Supplier.supplier_id" Label="supplier_id" Name="supplier_id" Category="Property Primary" Type="int" MaxLength="64" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 64
+Npgsql:ValueGenerationStrategy: IdentityByDefaultColumn
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Supplier.Product" Label="Product (*)" Name="Product" Category="Navigation Collection" Type="ICollection&lt;Product&gt;"  Field="" Dependent="Product" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Supplier.PurchaseOrders" Label="PurchaseOrders (*)" Name="PurchaseOrders" Category="Navigation Collection" Type="ICollection&lt;PurchaseOrder&gt;"  Field="" Dependent="PurchaseOrder" Principal="" Inverse="suppliers" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Supplier.city" Label="city" Name="city" Category="Property Optional" Type="string" MaxLength="15" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 15
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Supplier.email" Label="email" Name="email" Category="Property Required" Type="string" MaxLength="64" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 64
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Supplier.phone_no" Label="phone_no" Name="phone_no" Category="Property Required" Type="string" MaxLength="10" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 10
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Supplier.sup_name" Label="sup_name" Name="sup_name" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="TypeMapping: Microsoft.EntityFrameworkCore.Storage.StringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+  </Nodes>
+  <Links>
+<Link Source = "IModel" Target="Address" Category="Contains" />
+<Link Source = "IModel" Target="Category" Category="Contains" />
+<Link Source = "Address" Target="Address.Staff" Category="Contains" />
+<Link Source = "Address" Target="Address.address_id" Category="Contains" />
+<Link Source = "Address" Target="Address.addressLine_1" Category="Contains" />
+<Link Source = "Address" Target="Address.city" Category="Contains" />
+<Link Source = "Address" Target="Address.pincode" Category="Contains" />
+<Link Source = "Address" Target="Address.state" Category="Contains" />
+<Link Source = "IModel" Target="Product" Category="Contains" />
+<Link Source = "Category" Target="Category.Product" Category="Contains" />
+<Link Source = "Category" Target="Category.category_id" Category="Contains" />
+<Link Source = "Category" Target="Category.cat_code" Category="Contains" />
+<Link Source = "Category" Target="Category.cat_name" Category="Contains" />
+<Link Source = "IModel" Target="PurchaseOrder" Category="Contains" />
+<Link Source = "Product" Target="Product.categories" Category="Contains" />
+<Link Source = "Product" Target="Product.purchaseorder" Category="Contains" />
+<Link Source = "Product" Target="Product.product_id" Category="Contains" />
+<Link Source="Product" Target="Category" From="Product.category_id" To="Category.category_id" Name="Product -> Category" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Product" Target="Supplier" From="Product.supplier_id" To="Supplier.supplier_id" Name="Product -> Supplier" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Product" Target="Product.category_id" Category="Contains" />
+<Link Source = "Product" Target="Product.costPrice" Category="Contains" />
+<Link Source = "Product" Target="Product.manufacturer" Category="Contains" />
+<Link Source = "Product" Target="Product.name" Category="Contains" />
+<Link Source = "Product" Target="Product.sellingPrice" Category="Contains" />
+<Link Source = "Product" Target="Product.supplier_id" Category="Contains" />
+<Link Source = "IModel" Target="Role" Category="Contains" />
+<Link Source = "PurchaseOrder" Target="PurchaseOrder.products" Category="Contains" />
+<Link Source = "PurchaseOrder" Target="PurchaseOrder.suppliers" Category="Contains" />
+<Link Source = "PurchaseOrder" Target="PurchaseOrder.supplier_id" Category="Contains" />
+<Link Source="PurchaseOrder" Target="Product" From="PurchaseOrder.product_id" To="Product.product_id" Name="PurchaseOrder -> Product" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="PurchaseOrder" Target="Supplier" From="PurchaseOrder.supplier_id" To="Supplier.supplier_id" Name="PurchaseOrder -> Supplier" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "PurchaseOrder" Target="PurchaseOrder.product_id" Category="Contains" />
+<Link Source = "PurchaseOrder" Target="PurchaseOrder.order_id" Category="Contains" />
+<Link Source = "PurchaseOrder" Target="PurchaseOrder.supply_date" Category="Contains" />
+<Link Source = "IModel" Target="Staff" Category="Contains" />
+<Link Source = "Role" Target="Role.Staff" Category="Contains" />
+<Link Source = "Role" Target="Role.role_id" Category="Contains" />
+<Link Source = "Role" Target="Role.description" Category="Contains" />
+<Link Source = "Role" Target="Role.name" Category="Contains" />
+<Link Source = "IModel" Target="Supplier" Category="Contains" />
+<Link Source = "Staff" Target="Staff.addresses" Category="Contains" />
+<Link Source = "Staff" Target="Staff.roles" Category="Contains" />
+<Link Source = "Staff" Target="Staff.staff_id" Category="Contains" />
+<Link Source="Staff" Target="Address" From="Staff.address_id" To="Address.address_id" Name="Staff -> Address" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Staff" Target="Role" From="Staff.role_id" To="Role.role_id" Name="Staff -> Role" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Staff" Target="Staff.Staff_name" Category="Contains" />
+<Link Source = "Staff" Target="Staff.address_id" Category="Contains" />
+<Link Source = "Staff" Target="Staff.phone_no" Category="Contains" />
+<Link Source = "Staff" Target="Staff.role_id" Category="Contains" />
+<Link Source = "IModel" Target="Supplier" Category="Contains" />
+<Link Source = "Supplier" Target="Supplier.Product" Category="Contains" />
+<Link Source = "Supplier" Target="Supplier.PurchaseOrders" Category="Contains" />
+<Link Source = "Supplier" Target="Supplier.supplier_id" Category="Contains" />
+<Link Source = "Supplier" Target="Supplier.city" Category="Contains" />
+<Link Source = "Supplier" Target="Supplier.email" Category="Contains" />
+<Link Source = "Supplier" Target="Supplier.phone_no" Category="Contains" />
+<Link Source = "Supplier" Target="Supplier.sup_name" Category="Contains" />
+  </Links>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">
+      <Condition Expression="HasCategory('EntityType')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Required" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Required')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Property" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Property')" />
+      <Setter Property="Background" Value="#FF990000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Collection" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Collection')" />
+      <Setter Property="Background" Value="#FFFF3232" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Model" ValueLabel="True">
+      <Condition Expression="HasCategory('Model')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+  <Properties>
+    <Property Id="Name" Group="Model Properties" DataType="System.String" />
+    <Property Id="Field"  Description="Backing field" Group="Model Properties" DataType="System.String" />
+    <Property Id="Type"  Description="CLR data type" Group="Model Properties" DataType="System.String" />
+    <Property Id="To" Description="Source property" Group="Model Properties" DataType="System.String" />
+    <Property Id="From" Description="Target property" Group="Model Properties" DataType="System.String" />
+    <Property Id="Dependent" Description="Dependent entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Inverse" Description="Inverse entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Principal" Description="Principal entity" Group="Model Properties" DataType="System.String" />    
+    <Property Id="Annotations" Description="Annotations" Group="Model Properties" DataType="System.String" />
+    <Property Id="BaseClass"  Description="Base class" Group="Model Properties" DataType="System.String" />
+    <Property Id="ChangeTrackingStrategy" Description="Change tracking strategy" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsUnique" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="IsAbstract" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="ProductVersion" Label="Product Version" Description="EF Core product version" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsRequired" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsPrimaryKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsForeignKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsShadow" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsAlternateKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsConcurrencyToken" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnicode" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="ValueGenerated" Group="Property Flags" DataType="System.String" />
+    <Property Id="BeforeSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="AfterSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="PropertyAccessMode" Group="Property Flags" DataType="System.String" />
+  </Properties>
+</DirectedGraph>
