@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\ConsoleApp\\ConsoleApp.csproj": {}
+    "C:\\Users\\lenovo\\source\\repos\\Store\\ConsoleApp\\ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\ConsoleApp\\ConsoleApp.csproj": {
+    "C:\\Users\\lenovo\\source\\repos\\Store\\ConsoleApp\\ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\ConsoleApp\\ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\Store\\ConsoleApp\\ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\ConsoleApp\\ConsoleApp.csproj",
+        "projectPath": "C:\\Users\\lenovo\\source\\repos\\Store\\ConsoleApp\\ConsoleApp.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\ConsoleApp\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\source\\repos\\Store\\ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj": {
-                "projectPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj"
+              "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Data\\StoreApp.Data.csproj": {
+                "projectPath": "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Data\\StoreApp.Data.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj": {
+    "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Data\\StoreApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj",
-        "projectName": "SamuraiApp.Data",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Data\\StoreApp.Data.csproj",
+        "projectName": "StoreApp.Data",
+        "projectPath": "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Data\\StoreApp.Data.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Data\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -108,8 +108,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj"
+              "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Domain\\StoreApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Domain\\StoreApp.Domain.csproj"
               }
             }
           }
@@ -162,14 +162,14 @@
         }
       }
     },
-    "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
+    "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Domain\\StoreApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj",
-        "projectName": "SamuraiApp.Domain",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Domain\\StoreApp.Domain.csproj",
+        "projectName": "StoreApp.Domain",
+        "projectPath": "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Domain\\StoreApp.Domain.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Domain\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

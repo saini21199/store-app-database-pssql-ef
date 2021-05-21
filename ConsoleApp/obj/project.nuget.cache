@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aP5fra1bKFlXNE0KKo3gbgDFlbOtZKyWGimOkJjOAgFqpWZs29p0AtsrqwE9Fayiaw27hl8rt/d1CjLJm2cyPw==",
+  "dgSpecHash": "7wC6KXV3HbBC4nPa57zQNsEBeN4b0iaydEGw3veOMyVBH4wsGENYUy19cT4h/F28B7js35JK/9kZfsTpW+gC1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\ConsoleApp\\ConsoleApp.csproj",
+  "projectFilePath": "C:\\Users\\lenovo\\source\\repos\\Store\\ConsoleApp\\ConsoleApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

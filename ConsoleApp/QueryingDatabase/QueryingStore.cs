@@ -1,5 +1,6 @@
 ﻿using SamuraiApp.Data;
-using SamuraiApp.Domain;
+using StoreApp.Data;
+using StoreApp.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

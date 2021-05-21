@@ -1,7 +1,9 @@
 ﻿using ConsoleApp.QueryingDatabase;
 using Microsoft.EntityFrameworkCore;
-using SamuraiApp.Data;
-using SamuraiApp.Domain;
+//using SamuraiApp.Data;
+//using SamuraiApp.Domain;
+using StoreApp.Data;
+using StoreApp.Domain;
 using System;
 using System.Linq;
 
@@ -10,7 +12,6 @@ namespace ConsoleApp
     class Program
     {
         private static DepartmentContext context = new DepartmentContext();
-        
         static void Main(string[] args)
         {
             //AddInventoryTable();

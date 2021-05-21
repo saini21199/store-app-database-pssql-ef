@@ -1,0 +1,12 @@
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\obj\Debug\netcoreapp3.1\SamuraiApp.Domain.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\obj\Debug\netcoreapp3.1\SamuraiApp.Domain.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\obj\Debug\netcoreapp3.1\SamuraiApp.Domain.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\obj\Debug\netcoreapp3.1\SamuraiApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\obj\Debug\netcoreapp3.1\SamuraiApp.Domain.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\bin\Debug\netcoreapp3.1\StoreApp.Domain.deps.json
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\bin\Debug\netcoreapp3.1\StoreApp.Domain.runtimeconfig.json
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\bin\Debug\netcoreapp3.1\StoreApp.Domain.runtimeconfig.dev.json
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\bin\Debug\netcoreapp3.1\StoreApp.Domain.dll
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\bin\Debug\netcoreapp3.1\StoreApp.Domain.pdb
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\obj\Debug\netcoreapp3.1\StoreApp.Domain.dll
+C:\Users\lenovo\source\repos\SamuraiApp\SamuraiApp.Domain\obj\Debug\netcoreapp3.1\StoreApp.Domain.pdb

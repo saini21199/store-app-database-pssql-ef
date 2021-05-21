@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SamuraiApp.Data\SamuraiApp.Data.csproj" />
+    <ProjectReference Include="..\SamuraiApp.Data\StoreApp.Data.csproj" />
   </ItemGroup>
 
 </Project>

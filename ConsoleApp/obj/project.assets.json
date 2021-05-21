@@ -301,23 +301,23 @@
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "SamuraiApp.Data/1.0.0": {
+      "StoreApp.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.11",
           "Npgsql": "5.0.5",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "3.1.1",
-          "SamuraiApp.Domain": "1.0.0"
+          "StoreApp.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/SamuraiApp.Data.dll": {}
+          "bin/placeholder/StoreApp.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SamuraiApp.Data.dll": {}
+          "bin/placeholder/StoreApp.Data.dll": {}
         }
       },
-      "SamuraiApp.Domain/1.0.0": {
+      "StoreApp.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -325,10 +325,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "3.1.1"
         },
         "compile": {
-          "bin/placeholder/SamuraiApp.Domain.dll": {}
+          "bin/placeholder/StoreApp.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SamuraiApp.Domain.dll": {}
+          "bin/placeholder/StoreApp.Domain.dll": {}
         }
       }
     }
@@ -928,15 +928,15 @@
         "version.txt"
       ]
     },
-    "SamuraiApp.Data/1.0.0": {
+    "StoreApp.Data/1.0.0": {
       "type": "project",
-      "path": "../SamuraiApp.Data/SamuraiApp.Data.csproj",
-      "msbuildProject": "../SamuraiApp.Data/SamuraiApp.Data.csproj"
+      "path": "../SamuraiApp.Data/StoreApp.Data.csproj",
+      "msbuildProject": "../SamuraiApp.Data/StoreApp.Data.csproj"
     },
-    "SamuraiApp.Domain/1.0.0": {
+    "StoreApp.Domain/1.0.0": {
       "type": "project",
-      "path": "../SamuraiApp.Domain/SamuraiApp.Domain.csproj",
-      "msbuildProject": "../SamuraiApp.Domain/SamuraiApp.Domain.csproj"
+      "path": "../SamuraiApp.Domain/StoreApp.Domain.csproj",
+      "msbuildProject": "../SamuraiApp.Domain/StoreApp.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -944,7 +944,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.11",
       "Npgsql >= 5.0.5",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.1.1",
-      "SamuraiApp.Data >= 1.0.0"
+      "StoreApp.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -954,11 +954,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\ConsoleApp\\ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\Store\\ConsoleApp\\ConsoleApp.csproj",
       "projectName": "ConsoleApp",
-      "projectPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\ConsoleApp\\ConsoleApp.csproj",
+      "projectPath": "C:\\Users\\lenovo\\source\\repos\\Store\\ConsoleApp\\ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\ConsoleApp\\obj\\",
+      "outputPath": "C:\\Users\\lenovo\\source\\repos\\Store\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -978,8 +978,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj": {
-              "projectPath": "C:\\Users\\lenovo\\source\\repos\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj"
+            "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Data\\StoreApp.Data.csproj": {
+              "projectPath": "C:\\Users\\lenovo\\source\\repos\\Store\\SamuraiApp.Data\\StoreApp.Data.csproj"
             }
           }
         }
